@@ -218,7 +218,15 @@ leftButton.addEventListener('click', () => changeDirection('left'));
 rightButton.addEventListener('click', () => changeDirection('right'));
 
 function changeDirection(newDirection) {
-    direction = newDirection
+    if (newDirection === "up" && direction !== "down") {
+        direction = "up";
+    } else if (newDirection === "down" && direction !== "up") {
+        direction = "down";
+    } else if (newDirection === "left" && direction !== "right") {
+        direction = "left";
+    } else if (newDirection === "right" && direction !== "left") {
+        direction = "right";
+    }
 }
 
 // Função principal de atualização do jogo
