@@ -68,8 +68,8 @@ body {
 /* Estilos dos botões */
 .controls-container  button {
     font-size: 20px;
-    padding: 30px 30px;
-    margin: 0 28px;
+    padding: 28px 28px;
+    margin: 0 26px;
     border: none;
     border-radius: 15px;
     background-color: #ccc;
