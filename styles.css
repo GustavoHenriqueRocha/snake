@@ -60,17 +60,18 @@ body {
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom: 50px;
+    bottom: 20px;
     left: 50%;
-    transform: translateX(-50%);
-    
+    transform: translateX(-50%);    
 }
 
 /* Estilos dos botões */
-.controls-container button {
+.controls-container  button {
     font-size: 20px;
-    padding: 10px 20px;
-    margin: 5px;
+    padding: 20px 20px;
+    margin: 0 18px;
     border: none;
+    border-radius: 15px;
     background-color: #ccc;
 }
+

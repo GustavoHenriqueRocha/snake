@@ -206,6 +206,21 @@ document.addEventListener("keydown", (event) => {
     }, 10); // Ajuste o tempo conforme necessário
 });
 
+//mobile movement
+const upButton = document.getElementById('upButton');
+const downButton = document.getElementById('downButton');
+const leftButton = document.getElementById('leftButton');
+const rightButton = document.getElementById('rightButton');
+
+upButton.addEventListener('click', () => changeDirection('up'));
+downButton.addEventListener('click', () => changeDirection('down'));
+leftButton.addEventListener('click', () => changeDirection('left'));
+rightButton.addEventListener('click', () => changeDirection('right'));
+
+function changeDirection(newDirection) {
+    direction = newDirection
+}
+
 // Função principal de atualização do jogo
 function updateGame(){
 	if (gameRunning) {
