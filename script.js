@@ -25,7 +25,7 @@ const gridSize = 20;
 let score = 0;
 
 // Defina a velocidade do jogo (em milissegundos)
-let gameSpeed = 100; // Aumente esse valor para diminuir a velocidade
+let gameSpeed = 120; // Aumente esse valor para diminuir a velocidade
 
 // Atualiza a posição da comida
 function updateFoodPosition() {
@@ -79,8 +79,8 @@ function updateSnakePosition(){
         // Atualize a posição da comida
         updateFoodPosition();
         // Aumenta a pontuação
-        score += 10; // Ajuste conforme necessário
-        gameSpeed -= 0.8
+        score += 5; // Ajuste conforme necessário
+        gameSpeed -= 0.7
     	updateScoreDisplay();
     } else {
         // Se já houver segmentos, remova o último para manter o tamanho da cobra
@@ -134,19 +134,7 @@ let gameRunning = true
 
 function gameOver(){
 	if (gameRunning) {
-
-		// Salva o título atual da página
-        const originalTitle = document.title;
-
-        // Define um título vazio temporariamente
-        document.title = '';
-
-        // Exibe o alerta de Game Over
-        alert('Fim de Jogo');
-
-        // Restaura o título original da página
-        document.title = originalTitle;
-        
+		alert('fim de jogo')
 		gameRunning = true;
 		gameSpeed = 100
 		snakeX = 180 
