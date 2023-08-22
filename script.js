@@ -134,7 +134,19 @@ let gameRunning = true
 
 function gameOver(){
 	if (gameRunning) {
-		alert('fim de jogo')
+
+		// Salva o título atual da página
+        const originalTitle = document.title;
+
+        // Define um título vazio temporariamente
+        document.title = '';
+
+        // Exibe o alerta de Game Over
+        alert('Fim de Jogo');
+
+        // Restaura o título original da página
+        document.title = originalTitle;
+        
 		gameRunning = true;
 		gameSpeed = 100
 		snakeX = 180 
